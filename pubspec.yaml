@@ -20,7 +20,9 @@ dependencies:
   logging: ^1.0.2
   provider: ^6.0.2
   shared_preferences: ^2.0.13
+
   rive: ^0.9.1
+  google_fonts: ^3.0.1
 
 #  games_services: ^2.0.7 # A Flutter plugin to support game center and google play games services.
 #  firebase_core: ^1.15.0
@@ -42,6 +44,7 @@ flutter:
     - assets/images/
     - assets/music/
     - assets/sfx/
+    - assets/rive/
 
   fonts:
     - family: Permanent Marker

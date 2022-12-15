@@ -1,6 +1,3 @@
-import 'dart:io';
-
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:logging/logging.dart';
@@ -19,22 +16,23 @@ import 'package:tap_tap/style/snack_bar.dart';
 
 Future<void> main() async {
   // FirebaseCrashlytics? crashlytics;
-  if (!kIsWeb && (Platform.isIOS || Platform.isAndroid)) {
-    try {
-      WidgetsFlutterBinding.ensureInitialized();
-      // await Firebase.initializeApp(
-      //   options: DefaultFirebaseOptions.currentPlatform,
-      // );
-      // crashlytics = FirebaseCrashlytics.instance;
-    } catch (e) {
-      debugPrint("Firebase couldn't be initialized: $e");
-    }
-  }
-  //
+  // if (!kIsWeb && (Platform.isIOS || Platform.isAndroid)) {
+  //   try {
+  //     WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+  // crashlytics = FirebaseCrashlytics.instance;
+  //   } catch (e) {
+  //     debugPrint("Firebase couldn't be initialized: $e");
+  //   }
+  // }
+
   // await guardWithCrashlytics(
   //   guardedMain,
   //   crashlytics: crashlytics,
   // );
+  guardedMain();
 }
 
 /// Without logging and crash reporting, this would be `void main()`.

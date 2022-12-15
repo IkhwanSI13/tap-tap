@@ -1,10 +1,7 @@
 final gameLevels = [
   const GameLevel(number: 1, speed: 1),
-  const GameLevel(number: 1, speed: 2),
-  const GameLevel(number: 2, speed: 1),
   const GameLevel(number: 2, speed: 2),
-  const GameLevel(number: 3, speed: 1),
-  const GameLevel(number: 3, speed: 2),
+  const GameLevel(number: 3, speed: 3),
 ];
 
 class GameLevel {

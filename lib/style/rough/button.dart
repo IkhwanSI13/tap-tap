@@ -50,6 +50,7 @@ class RoughButton extends StatelessWidget {
           if (drawRectangle)
             Image.asset(
               'assets/images/bar.png',
+              width: 172,
             ),
           DefaultTextStyle(
             style: TextStyle(

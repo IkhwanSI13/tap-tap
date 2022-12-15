@@ -16,7 +16,7 @@ CustomTransitionPage<T> buildTransition<T>({
     child: child,
     transitionsBuilder: (BuildContext context, Animation<double> animation,
         Animation<double> secondaryAnimation, Widget child) {
-      return _InkReveal(
+      return InkReveal(
         animation: animation,
         color: color,
         flipHorizontally: flipHorizontally,
@@ -31,7 +31,7 @@ CustomTransitionPage<T> buildTransition<T>({
   );
 }
 
-class _InkReveal extends StatefulWidget {
+class InkReveal extends StatefulWidget {
   final Widget child;
 
   final Animation<double> animation;
@@ -40,7 +40,7 @@ class _InkReveal extends StatefulWidget {
 
   final bool flipHorizontally;
 
-  const _InkReveal({
+  const InkReveal({
     required this.child,
     required this.animation,
     required this.color,
@@ -49,11 +49,11 @@ class _InkReveal extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<_InkReveal> createState() => _InkRevealState();
+  State<InkReveal> createState() => InkRevealState();
 }
 
-class _InkRevealState extends State<_InkReveal> {
-  static final _log = Logger('_InkRevealState');
+class InkRevealState extends State<InkReveal> {
+  static final _log = Logger('InkRevealState');
 
   bool _finished = false;
 
@@ -65,7 +65,7 @@ class _InkRevealState extends State<_InkReveal> {
   }
 
   @override
-  void didUpdateWidget(covariant _InkReveal oldWidget) {
+  void didUpdateWidget(covariant InkReveal oldWidget) {
     if (oldWidget.animation != widget.animation) {
       oldWidget.animation.removeStatusListener(_statusListener);
       widget.animation.addStatusListener(_statusListener);

@@ -111,6 +111,7 @@ class SettingsScreen extends StatelessWidget {
   }
 }
 
+///
 class _NameChangeLine extends StatelessWidget {
   final String title;
 
@@ -151,6 +152,7 @@ class _NameChangeLine extends StatelessWidget {
   }
 }
 
+///
 class _SettingsLine extends StatelessWidget {
   final String title;
 

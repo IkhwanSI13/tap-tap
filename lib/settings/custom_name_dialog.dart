@@ -33,7 +33,6 @@ class _CustomNameDialogState extends State<CustomNameDialog> {
         parent: widget.animation,
         curve: Curves.easeOutCubic,
       ),
-      // TODO: make this nicer
       child: SimpleDialog(
         title: const Text('Change name'),
         children: [
